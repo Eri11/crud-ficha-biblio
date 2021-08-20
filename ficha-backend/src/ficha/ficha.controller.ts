@@ -75,13 +75,4 @@ export class FichaController {
   remove(@Param('id') id: string) {
     return this.fichaService.remove(id);
   }
-
-  @Put(':id')
-  updateA(@Param('id') id:string, @Body('id_a') id_a:string, @Body('e_a') e_a:string) {
-    if(id_a==null){
-      return this.fichaService.updateAcceso(id, e_a);
-    }else{
-      return this.fichaService.removeA(id, id_a);
-    }
-  }
 }
