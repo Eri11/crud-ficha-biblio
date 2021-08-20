@@ -1,0 +1,34 @@
+###
+GET http://localhost:/ficha
+
+###
+POST  http://localhost:/ficha
+content-Type: application/json
+
+{
+  
+    "name": "Joanne",
+    "mid_n": "Kathleen",
+    "last_n": "Rowling",
+    "titulo": "Harry Potter y el Prisionero de Azkaban",
+    "years": "1989",
+    "ciudad": "London",
+    "editorial": "Salamandra"
+}
+
+### 
+GET http://localhost:/611f4b6dd252f0a06c81da13
+
+### 
+DELETE http://localhost:3000/611f4b6dd252f0a06c81da13
+### 
+PUT http://localhost:3000/611f4b6dd252f0a06c81da13
+content-Type: application/json
+
+{
+    "mrn": 6789,
+    "nombre": "Edgar",
+    "edad": 32,
+    "direccion" : "asldkjasdl"
+
+}
